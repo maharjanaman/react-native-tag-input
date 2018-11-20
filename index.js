@@ -405,6 +405,7 @@ class Tag extends React.PureComponent<TagProps> {
             this.props.tagTextStyle,
           ]}>
             {this.props.label}
+            {!this.props.editable ? null : <Text>&nbsp;&times;</Text>}
             &nbsp;&times;
         </Text>
       );
